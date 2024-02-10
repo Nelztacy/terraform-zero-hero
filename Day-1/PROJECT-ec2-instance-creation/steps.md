@@ -10,7 +10,14 @@ Create a directory for your Terraform project and create a Terraform configurati
    resource "aws_instance" "example" {
      ami           = "ami-0c55b159cbfafe1f0"  # Specify an appropriate AMI ID
      instance_type = "t2.micro"
-   }
+     subnet_id = "subnet-xxxxxxx"
+     key_name = "your-key-here"
+     tags = {
+       Name        = "example-instance"
+       Environment = "production"
+       Owner       = "terraform"
+  }
+}
 ```
 
 ## Initialize Terraform**
