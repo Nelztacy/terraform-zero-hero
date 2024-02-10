@@ -12,12 +12,13 @@ Create a directory for your Terraform project and create a Terraform configurati
      instance_type = "t2.micro"
      subnet_id = "subnet-xxxxxxx"
      key_name = "your-key-here"
+     subnet_id_value = "subnet-019ea91ed9b5252e7". # replace this
      tags = {
        Name        = "example-instance"
        Environment = "production"
        Owner       = "terraform"
+   }
   }
-}
 ```
 
 ## Initialize Terraform**
